@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Kalkulator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="//unpkg.com/alpinejs" defer></script> -->
+  </head>
+
+  <body>
+    <div class="">
+      <div
+        class="bg-zinc-900 w-72 h-24 flex m-auto mt-20 rounded-t-md"
+        id="intiValue"
+      >
+        <div
+          class="flex items-center m-auto text-5xl font-[kalkulator] bg-gray-100 w-[273px] h-20 rounded-md"
+        >
+          <div class="m-auto mr-3" id="value">
+            <a class="animate-ping duration-150" id="mulai">_</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-zinc-900 w-72 h-[393px] m-auto rounded-b-md">
+        <div class="grid grid-cols-3 gap-2 h-96 font-semibold text-2xl px-2">
+          <button
+            value="1"
+            class="bg-gray-700 text-white hover:shadow-sm hover:shadow-gray-400 active:bg-gray-800 active:shadow-none rounded-md"
+          >
+            1
+          </button>
+          <button
+            value="2"
+            class="bg-gray-700 text-white hover:shadow-sm hover:shadow-gray-400 active:bg-gray-800 active:shadow-none rounded-md"
+          >
+            2
+          </button>
+          <button
+            value="3"
+            class="bg-gray-700 text-white hover:shadow-sm hover:shadow-gray-400 active:bg-gray-800 active:shadow-none rounded-md"
+          >
+            3
+          </button>
+          <button
+            value="4"
+            class="bg-gray-700 text-white hover:shadow-sm hover:shadow-gray-400 active:bg-gray-800 active:shadow-none rounded-md"
+          >
+            4
+          </button>
+          <button
+            value="5"
+            class="bg-gray-700 text-white hover:shadow-sm hover:shadow-gray-400 active:bg-gray-800 active:shadow-none rounded-md"
+          >
+            5
+          </button>
+          <button
+            value="6"
+            class="bg-gray-700 text-white hover:shadow-sm hover:shadow-gray-400 active:bg-gray-800 active:shadow-none rounded-md"
+          >
+            6
+          </button>
+          <button
+            value="7"
+            class="bg-gray-700 text-white hover:shadow-sm hover:shadow-gray-400 active:bg-gray-800 active:shadow-none rounded-md"
+          >
+            7
+          </button>
+          <button
+            value="8"
+            class="bg-gray-700 text-white hover:shadow-sm hover:shadow-gray-400 active:bg-gray-800 active:shadow-none rounded-md"
+          >
+            8
+          </button>
+          <button
+            value="9"
+            class="bg-gray-700 text-white hover:shadow-sm hover:shadow-gray-400 active:bg-gray-800 active:shadow-none rounded-md"
+          >
+            9
+          </button>
+          <button
+            value="0"
+            class="bg-gray-700 text-white hover:shadow-sm hover:shadow-gray-400 active:bg-gray-800 active:shadow-none rounded-md"
+          >
+            0
+          </button>
+          <button
+            value="."
+            class="bg-gray-700 text-white hover:shadow-sm hover:shadow-gray-400 active:bg-gray-800 active:shadow-none rounded-md"
+          >
+            .
+          </button>
+          <button
+            value="+"
+            class="bg-gray-700 text-white hover:shadow-sm hover:shadow-gray-400 active:bg-gray-800 active:shadow-none rounded-md"
+          >
+            +
+          </button>
+          <button
+            value="-"
+            class="bg-gray-700 text-white hover:shadow-sm hover:shadow-gray-400 active:bg-gray-800 active:shadow-none rounded-md"
+          >
+            -
+          </button>
+          <button
+            value="*"
+            class="bg-gray-700 text-white hover:shadow-sm hover:shadow-gray-400 active:bg-gray-800 active:shadow-none rounded-md"
+          >
+            x
+          </button>
+          <button
+            value="/"
+            class="bg-gray-700 text-white hover:shadow-sm hover:shadow-gray-400 active:bg-gray-800 active:shadow-none rounded-md"
+          >
+            /
+          </button>
+          <button
+            value="c"
+            class="bg-pink-500 text-white hover:shadow-sm hover:shadow-pink-200 active:bg-pink-600 active:shadow-none rounded-md"
+            id="clear"
+          >
+            c
+          </button>
+          <button
+            value="="
+            class="bg-blue-500 text-white hover:shadow-sm hover:shadow-blue-200 active:bg-blue-600 active:shadow-none rounded-md w-[178px]"
+            id="jumlah"
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="" id="histori"></div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
